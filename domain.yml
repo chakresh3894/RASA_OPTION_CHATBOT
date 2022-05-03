@@ -1,0 +1,63 @@
+version: "2.0"
+
+intents:
+  - greet
+  - apply
+  - Explore
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: 'Hey there '
+    buttons:
+    - title: "Apply now"
+      payload: '/apply'
+    - title: "Explore"
+      payload: '/Explore'
+   
+  
+
+  utter_apply:
+  - text: "here you can use this link to apply for salary account https://sbi.co.in/web/salary-account"
+
+  utter_Explore:
+  - text: "Please choose the options to explore more ."
+    buttons:
+    - title: "  Who can open a Salary Account?"
+      payload: '/Explore'
+    - title: "  Benefits of a Salary Account"
+      payload: '/Explore'
+    - title: "  Conversion of accounts"
+      payload: '/Explore'
+    - title: "  Other feather"
+      payload: '/Explore'
+ 
+ 
+  utter_open_salary:
+  - text: "Salary Accounts can only be opened when an employer ties up with a bank. With this tie-up, the employer can transfer the monthly salaries in bulk in respective Salary Accounts of the employees."
+ 
+  utter_benefits:
+  - text: "Salary Package account is a special savings account offered to salaried customers which provide unique benefits and services, as well as seamless access to the most advanced and secure Net Banking and Mobile Banking services"
+ 
+  utter_conversion:
+  - text: "Can it be converted to Salary account? Yes. Existing saving account with SBI can also be converted to CSP account. Please contact your branch in this regard."
+  utter_other: 
+  - text: ""
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, created by chakresh powered by rasa :)  "
+
+ 
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

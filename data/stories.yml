@@ -1,0 +1,30 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: apply
+  - action: utter_apply
+ 
+
+- story: account path
+  steps:
+  - intent: apply
+  - action: utter_apply
+
+- story: Explore path
+  steps:
+  - intent: Explore
+  - action: utter_Explore
+ 
+# - story: options path
+#   steps:
+#   - intent: open 
+#   - action: utter_open_salary
+#   - indent: benefits
+#   - action: utter_benefits
+#   - intent: conversion
+#   - action: utter_conversion
